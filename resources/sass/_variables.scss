@@ -1,0 +1,12 @@
+@import "reset/reset";
+
+$main-font-color : #55b3f7;
+$main-btn-color : #55b3f7;
+$main-base-color : #f2f8f8;
+$sub-base-color : #fcfdfd;
+$main-btn-font-color : #f2f8f8;
+
+body {
+    background: $main-base-color;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
