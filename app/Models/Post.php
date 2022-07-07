@@ -20,4 +20,9 @@ class Post extends Model
     {
         return $this->belongsTo(User::class);
     }
+
+    public function postChats()
+    {
+        return $this->hasMany(PostChat::class);
+    }
 }

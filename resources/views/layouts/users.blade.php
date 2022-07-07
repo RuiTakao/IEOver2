@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Scripts -->
-    <script src="{{ asset('js/posts/app.js') }}" defer></script>
+    <script src="{{ asset('js/users/app.js') }}" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="{{ asset('css/posts/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/users/app.css') }}" rel="stylesheet">
 </head>
 <body>
 
@@ -42,13 +42,9 @@
         </div>
     </header>
     <main class="main">
-        <section>
-            <div class="container">
 
-                @yield('content')
+        @yield('content')
 
-            </div>
-        </section>
     </main>
 
 </body>

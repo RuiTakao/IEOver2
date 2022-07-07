@@ -1,0 +1,89 @@
+.header {
+    background: #FCFDFD;
+    box-shadow: 0 3px 6px #eaeaea;
+    padding: 8px;
+}
+
+.header_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_nav {
+    position: relative;
+
+    /** モーダル */
+    .is-active {
+        display: block;
+    }
+}
+
+.header_nav_lists {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_nav_link {
+    display: block;
+
+    &:not(:first-child) {
+        margin-left: 12px;
+    }
+}
+
+.header_nav_list {
+    list-style: none;
+    background: #eaeaea;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile_icon {
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    cursor: pointer;
+}
+
+/** header_auth_link_menu */
+.header_auth_link_menu {
+    width: 160px;
+    background: #eaeaea;
+    display: none;
+
+    /** position article_show_config */
+    position: absolute;
+    top: 40px;
+    right: 0;
+}
+
+.header_auth_link_menu_btn {
+    padding: 4px 8px;
+
+    &:not(:first-child) {
+        border-top:1px solid #ddd;
+    }
+}
+
+.header_profile_link_btn {
+    display: block;
+    width: 100%;
+    color: #000;
+}
+
+.header_logout_btn {
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-size: 16px;
+    letter-spacing: .1em;
+    text-align: left;
+    cursor: pointer;
+}

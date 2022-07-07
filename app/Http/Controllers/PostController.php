@@ -8,12 +8,6 @@ use App\Models\Post;
 
 class PostController extends Controller
 {
-
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
     /**
      * Display a listing of the resource.
      *
@@ -21,16 +15,17 @@ class PostController extends Controller
      */
     public function index()
     {
-        return view('posts.index');
+        $posts = Post::latest()->get();
+
+        return view('posts.index', ['posts' => $posts]);
     }
 
     /**
      * Show the form for creating a new resource.
      *
-     * @param  \App\Models\User  $user
      * @return \Illuminate\Http\Response
      */
-    public function create(User $user)
+    public function create()
     {
         return view('posts.create');
     }
@@ -39,7 +34,6 @@ class PostController extends Controller
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
     {
@@ -51,7 +45,7 @@ class PostController extends Controller
         $post->save();
 
         return redirect()
-            ->route('user.show', ['user_id' => $post->user_id]);
+            ->route('user.show', ['user' => $post->user_id]);
     }
 
     /**
@@ -63,40 +57,62 @@ class PostController extends Controller
      */
     public function show(User $user, Post $post)
     {
-        return view('posts.index');
+        return view('posts.show', ['post' => $post]);
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\User  $user
+     * @param  \App\Models\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function edit(User $user)
+    public function edit(Post $post)
     {
-        //
+        if (!(auth()->user()->id == $post->user->id)) {
+            return redirect()
+                ->route('user.show', ['user' => auth()->user()->id]);
+        }
+        return view('posts.edit', ['post' => $post]);
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  \App\Models\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Post $post)
     {
-        //
+        if (!(auth()->user()->id == $post->user->id)) {
+            return redirect()
+                ->route('user.show', ['user' => auth()->user()->id]);
+        }
+
+        $post->title = $request->title;
+        $post->sub_title = $request->sub_title;
+        $post->body = $request->body;
+        $post->save();
+
+        return redirect()
+            ->route('user.show', ['user' => $post->user_id]);
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param  \App\Models\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Post $post)
     {
-        //
+        if (!(auth()->user()->id == $post->user->id)) {
+            return redirect()
+                ->route('user.show', ['user' => auth()->user()->id]);
+        }
+        $post->delete();
+
+        return redirect()
+            ->route('user.show', ['user' => $post->user_id]);
     }
 }

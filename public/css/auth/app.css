@@ -8,9 +8,14 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 body {
   background: #f2f8f8;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 80px;
 }
 
 .container {
