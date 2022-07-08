@@ -22,9 +22,14 @@ class ChatController extends Controller
      */
     public function index(User $user, Post $post)
     {
+        $url = [
+            'js' => asset('js/chats/app.js'),
+            'css' => asset('css/chats/app.css'),
+        ];
+
         $chats = PostChat::latest()->where('post_id', $post->id)->get();
 
-        return view('chats.index',['post' => $post, 'chats' => $chats]);
+        return view('chats.index',['post' => $post, 'chats' => $chats, 'url' => $url]);
     }
 
     /**

@@ -16,8 +16,12 @@ class PostController extends Controller
     public function index()
     {
         $posts = Post::latest()->get();
+        $url = [
+            'js' => asset('js/posts/app.js'),
+            'css' => asset('css/posts/app.css'),
+        ];
 
-        return view('posts.index', ['posts' => $posts]);
+        return view('posts.index', ['posts' => $posts, 'url' => $url]);
     }
 
     /**
@@ -27,7 +31,12 @@ class PostController extends Controller
      */
     public function create()
     {
-        return view('posts.create');
+        $url = [
+            'js' => asset('js/posts/app.js'),
+            'css' => asset('css/posts/app.css'),
+        ];
+
+        return view('posts.create', ['url' => $url]);
     }
 
     /**
@@ -57,7 +66,12 @@ class PostController extends Controller
      */
     public function show(User $user, Post $post)
     {
-        return view('posts.show', ['post' => $post]);
+        $url = [
+            'js' => asset('js/posts/app.js'),
+            'css' => asset('css/posts/app.css'),
+        ];
+
+        return view('posts.show', ['post' => $post, 'url' => $url]);
     }
 
     /**
@@ -68,11 +82,16 @@ class PostController extends Controller
      */
     public function edit(Post $post)
     {
+        $url = [
+            'js' => asset('js/posts/app.js'),
+            'css' => asset('css/posts/app.css'),
+        ];
+
         if (!(auth()->user()->id == $post->user->id)) {
             return redirect()
                 ->route('user.show', ['user' => auth()->user()->id]);
         }
-        return view('posts.edit', ['post' => $post]);
+        return view('posts.edit', ['post' => $post, 'url' => $url]);
     }
 
     /**

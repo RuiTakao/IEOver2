@@ -1,7 +1,6 @@
-@extends('layouts.chats')
+@extends('layouts.app')
 
 @section('content')
-{{-- {{dd($chats)}} --}}
 <section class="chat_form_section">
     <div class="container chat_form_content">
         <form class="chat_form" action="{{ route('chat.store', ['post' => $post]) }}" method="post">
