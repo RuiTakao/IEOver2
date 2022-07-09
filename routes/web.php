@@ -4,7 +4,8 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
-use App\Http\Controllers\ChatController;
+use App\Http\Controllers\MessageRoomController;
+use App\Http\Controllers\MessageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,11 +38,10 @@ Route::group([
         Route::delete('post/{post}/destroy', [PostController::class, 'destroy'])->name('destroy');
 });
 
-Route::group([
-    'as' => 'chat.'
-    ], function(){
-        Route::get('chat/{user}/{post}', [ChatController::class, 'index'])->name('index');
-        Route::post('chat/{post}/store', [ChatController::class, 'store'])->name('store');
-});
+Route::post('post/{post}/createMessageRoom', [MessageRoomController::class, 'store'])->name('createMessageRoom.store')->where(['post' => '[0-9]+']);
+
+Route::get('post/{messageRoom}/message', [MessageController::class, 'index'])->name('message.index')->where(['messageRoom' => '[0-9]+']);
+Route::post('post/{messageRoom}/createMessage', [MessageController::class, 'store'])->name('message.store')->where(['messageRoom' => '[0-9]+']);
+
 
 Auth::routes();

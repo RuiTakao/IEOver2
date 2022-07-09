@@ -66,6 +66,7 @@ class PostController extends Controller
      */
     public function show(User $user, Post $post)
     {
+        // dd($post);
         $url = [
             'js' => asset('js/posts/app.js'),
             'css' => asset('css/posts/app.css'),

@@ -5,20 +5,18 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class PostChat extends Model
+class Message extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'chat',
-        'post_id'
+        'message',
+        'user_id',
+        'message_room_id'
     ];
 
-    public function posts() {
-        return $this->belongsTo(Post::class);
-    }
-
-    public function user() {
+    public function user()
+    {
         return $this->belongsTo(User::class);
     }
 }

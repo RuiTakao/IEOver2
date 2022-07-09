@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
+{{-- {{dump($post->user->name)}}
+{{dump(auth()->user()->name)}} --}}
 <section>
     <div class="container">
         <div class="article_shows">
@@ -39,9 +41,14 @@
                     @endif
                 </div>
             </div>
+            @if (!(auth()->user()->id == $post->user->id))
             <div class="article_show_chat_btn_area">
-                <a href="{{ route('chat.index', ['user' => $post->user->id, 'post' => $post->id]) }}" class="article_show_chat_btn">コメントする</a>
+                <form action="{{ route('createMessageRoom.store', ['post' => $post->id]) }}" method="post">
+                    @csrf
+                    <input type="submit" value="コメントする">
+                </form>
             </div>
+            @endif
         </div>
     </div>
 </section>
