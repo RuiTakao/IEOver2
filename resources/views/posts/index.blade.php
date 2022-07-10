@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<section>
+<section class="article_list_section">
     <div class="container">
         <ul class="article_lists">
             @foreach ($posts as $post)

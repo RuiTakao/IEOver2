@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\MessageRoom;
+use App\Models\Message;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Post;
@@ -64,15 +66,16 @@ class PostController extends Controller
      * @param  \App\Models\Post  $post
      * @return \Illuminate\Http\Response
      */
-    public function show(User $user, Post $post)
+    public function show(User $user, Post $post, Message $message)
     {
-        // dd($post);
+        $messageRooms = MessageRoom::latest()->where('post_id', $post->id)->get();
+
         $url = [
             'js' => asset('js/posts/app.js'),
             'css' => asset('css/posts/app.css'),
         ];
 
-        return view('posts.show', ['post' => $post, 'url' => $url]);
+        return view('posts.show', ['post' => $post, 'messageRooms' => $messageRooms, 'message' => $message, 'url' => $url]);
     }
 
     /**

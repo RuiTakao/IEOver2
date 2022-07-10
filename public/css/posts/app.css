@@ -116,15 +116,12 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 900px;
-  display: flex;
-  justify-content: center;
+  max-width: 720px;
 }
 
 /** article_list */
-.article_lists {
+.article_list_section {
   margin-top: 40px;
-  width: 80%;
 }
 
 .article_list {
@@ -182,13 +179,12 @@ body {
   grid-column: 2;
 }
 
-/** article_show */
-.article_shows {
+/** article */
+.article_section {
   margin-top: 40px;
-  width: 80%;
 }
 
-.article_show {
+.article_container {
   background: #fcfdfd;
   box-shadow: 3px 3px 6px #eaeaea;
   padding: 16px;
@@ -196,43 +192,43 @@ body {
   justify-content: space-between;
 }
 
-.article_show_content {
+.article_content {
   width: 80%;
 }
 
-.article_show_post_time {
+.article_post_time {
   font-size: 14px;
 }
 
-.article_show_title {
+.article_title {
   font-size: 26px;
   margin-top: 8px;
 }
 
-.article_show_tag {
+.article_tag {
   margin-top: 8px;
 }
 
-.article_show_image {
+.article_image {
   width: 100%;
   height: 180px;
   background: #eaeaea;
   margin-top: 8px;
 }
 
-.article_show_sub_title {
+.article_sub_title {
   font-size: 20px;
   margin-top: 18px;
   font-weight: bold;
 }
 
-.article_show_body {
+.article_body {
   margin-top: 18px;
   line-height: 1.8em;
   letter-spacing: 3px;
 }
 
-.article_show_post_user {
+.article_post_user {
   margin-top: 8px;
 }
 
@@ -246,56 +242,49 @@ body {
   box-shadow: 3px 3px 6px #ddd;
 }
 
-.article_show_chat_btn_area {
-  margin-top: 16px;
-  width: 30%;
-  margin-left: auto;
-  text-align: center;
-}
-
-/** article_show_config */
-.article_show_config {
+/** article_config */
+.article_config {
   position: relative;
   /** モーダル */
 }
-.article_show_config .is-active {
+.article_config .is-active {
   display: block;
 }
 
-.article_show_config_btn {
+.article_config_btn {
   border: none;
   background: transparent;
   cursor: pointer;
 }
 
-.article_show_config_menu {
+.article_config_menu {
   width: 100px;
   background: #eaeaea;
   display: none;
-  /** position article_show_config */
+  /** position article_config */
   position: absolute;
   top: 24px;
   right: 0;
 }
 
-.article_show_config_menu_btn {
+.article_config_menu_btn {
   padding: 4px 8px;
 }
-.article_show_config_menu_btn:not(:first-child) {
+.article_config_menu_btn:not(:first-child) {
   border-top: 1px solid #ddd;
 }
 
-.article_show_edit {
+.article_edit {
   letter-spacing: 0.1em;
 }
 
-.article_show_edit_btn {
+.article_edit_btn {
   display: block;
   width: 100%;
   color: #000;
 }
 
-.article_show_delete_btn {
+.article_delete_btn {
   width: 100%;
   border: none;
   background: transparent;
@@ -303,4 +292,64 @@ body {
   letter-spacing: 0.1em;
   text-align: left;
   cursor: pointer;
+}
+
+/** message_room_create */
+.access_message_room_container {
+  margin-top: 24px;
+}
+
+.access_message_room_form {
+  text-align: right;
+}
+
+.access_message_room_btn {
+  background: #55b3f7;
+  color: #f2f8f8;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 2px;
+  padding: 6px 16px;
+  cursor: pointer;
+}
+
+/** article_message_list */
+.article_message_section {
+  margin-top: 40px;
+}
+
+.article_message_link {
+  display: block;
+  background: #fcfdfd;
+  padding: 16px;
+  box-shadow: 3px 3px 6px #eaeaea;
+}
+.article_message_link:not(:first-child) {
+  margin-top: 24px;
+}
+
+.article_message_head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.article_message_user {
+  display: flex;
+}
+
+.article_message_user_icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #eaeaea;
+}
+
+.article_message_user_name {
+  margin-left: 12px;
+}
+
+.article_message_body {
+  margin-top: 12px;
+  margin-left: 24px;
 }

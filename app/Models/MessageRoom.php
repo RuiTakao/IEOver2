@@ -24,4 +24,9 @@ class MessageRoom extends Model
     {
         return $this->belongsTo(Post::class);
     }
+
+    public function message()
+    {
+        return $this->hasMany(Message::class);
+    }
 }
