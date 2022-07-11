@@ -44,6 +44,7 @@ body {
 .header_nav_lists {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header_nav_link {
@@ -114,6 +115,27 @@ body {
   cursor: pointer;
 }
 
+/** モバイル */
+@media screen and (max-width: 420px) {
+  .header {
+    padding: 12px 10px;
+  }
+  .header-logo {
+    font-size: 18px;
+  }
+  .header_nav_link:not(:first-child) {
+    margin-left: 6px;
+  }
+  .header_nav_list {
+    width: 24px;
+    height: 24px;
+  }
+  .header_nav_post_btn {
+    padding: 2px 8px;
+    margin-left: 4px;
+    font-size: 14px;
+  }
+}
 .container {
   margin: 0 auto;
   max-width: 600px;
