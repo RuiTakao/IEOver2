@@ -30,7 +30,7 @@
                     <span class="article_list_tag_icon">タグ：</span>
                     <a class="article_list_tag_name" href="#">ソフトウェア開発</a>
                 </div>
-                <p class="article_list_post_time"><time>{{ $post->created_at->format('Y.m.d') }}</time></p>
+                <p class="article_list_post_time"><time>{{ $post->created_at->format('Y年n月j日') }}</time></p>
             </li>
             @endforeach
         </ul>

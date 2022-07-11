@@ -49,3 +49,20 @@ input[type="submit"] {
 .change_auth a {
     color: $main-font-color;
 }
+
+/** モバイル */
+@media screen and (max-width:420px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 10vw;
+    }
+
+    .auth_form_group {
+        width: 80%;
+        margin-top: 28px;
+    }
+}

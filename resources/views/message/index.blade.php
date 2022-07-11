@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-
 <section class="chat_form_section">
     <div class="container chat_form_content">
         <form class="chat_form" action="{{ route('message.store', ['messageRoom' => $messageRoom]) }}" method="post">
@@ -23,7 +22,7 @@
             <a class="article_content_tag_name" href="#">ソフトウェア開発</a>
         </div>
         <div class="article_content_post_user">
-            <a href="#" class="article_content_post_user_name">投稿者：<span>{{ $messageRoom->post->user->name }}</span></a>
+            <a href="{{ route('user.show', ['user' => $messageRoom->post->user->id]) }}" class="article_content_post_user_name">投稿者：<span>{{ $messageRoom->post->user->name }}</span></a>
         </div>
         <p class="article_content_post_time"><time>{{ $messageRoom->post->created_at->format('Y.m.d') }}</time></p>
     </div>
@@ -37,8 +36,8 @@
                 <div class="chat_list_head">
                     <div class="chat_user_icon"></div>
                     <div class="chat_user_status">
-                        <a class="chat_user_name" href="#">{{ $message->user->name }}</a>
-                        <p class="chat_post_time">{{ $message->created_at->format('Y.m.d') }}</p>
+                        <a class="chat_user_name" href="{{ route('user.show', ['user' => $message->user->id]) }}">{{ $message->user->name }}</a>
+                        <p class="chat_post_time">{{ $message->created_at->format('n月j日 G時i分') }}</p>
                     </div>
                 </div>
                 <p class="chat_list_body">{{ $message->message }}</p>
@@ -48,5 +47,4 @@
         </ul>
     </div>
 </section>
-
 @endsection

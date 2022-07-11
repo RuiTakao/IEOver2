@@ -17,15 +17,20 @@ use App\Http\Controllers\MessageController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+/** '/' にアクセスされたら '/posts' にリダイレクトする */
 Route::redirect('/', 'posts');
 
+/** user ページ関係の route */
 Route::get('{user}', [UserController::class, 'show'])
     ->where('user', '[0-9]+')
     ->name('user.show');
 
+/** posts 一覧ページへのroute */
 Route::get('posts', [PostController::class, 'index'])
     ->name('posts.index');
 
+/** post 関係のroute */
 Route::group([
     'as' => 'post.',
     'where' => ['post' => '[0-9]+']
@@ -38,10 +43,19 @@ Route::group([
         Route::delete('post/{post}/destroy', [PostController::class, 'destroy'])->name('destroy');
 });
 
-Route::post('post/{post}/createMessageRoom', [MessageRoomController::class, 'store'])->name('createMessageRoom.store')->where(['post' => '[0-9]+']);
+/** messageRoom を作る route */
+Route::post('post/{post}/createMessageRoom', [MessageRoomController::class, 'store'])
+    ->name('createMessageRoom.store')
+    ->where(['post' => '[0-9]+']);
 
-Route::get('post/{messageRoom}/message', [MessageController::class, 'index'])->name('message.index')->where(['messageRoom' => '[0-9]+']);
-Route::post('post/{messageRoom}/createMessage', [MessageController::class, 'store'])->name('message.store')->where(['messageRoom' => '[0-9]+']);
+/** message 関係の route */
+Route::group([
+    'as' => 'message.',
+    'where' => ['messageRoom' => '[0-9]+']
+    ], function () {
+        Route::get('post/{messageRoom}/message', [MessageController::class, 'index'])->name('index');
+        Route::post('post/{messageRoom}/createMessage', [MessageController::class, 'store'])->name('store');
+});
 
-
+/** auth 関係の route */
 Auth::routes();

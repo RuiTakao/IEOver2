@@ -1,12 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-{{-- {{dump($post->user->name)}}
-{{dump(auth()->user()->name)}} --}}
 <section class="article_section">
     <div class="container article_container">
         <div class="article_content">
-            <p class="article_post_time"><time>{{ $post->created_at->format('Y.m.d') }}</time></p>
+            <p class="article_post_time"><time>{{ $post->created_at->format('Y年n月j日') }}</time></p>
             <h3 class="article_title">{{ $post->title }}</></h3>
             <div class="article_tag">
                 <span class="article_tag_icon">タグ：</span>
@@ -65,7 +63,7 @@
                         </div>
                         <div class="article_message_post_time">
                             <time>
-                            {{ $messageDate->format('Y.m.d') }}
+                            {{ $messageDate->format('n月j日 G時i分') }}
                             </time>
                         </div>
                     </div>
