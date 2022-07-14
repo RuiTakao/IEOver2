@@ -9,7 +9,6 @@
                 <div class="user_icon"></div>
                 <div class="user_status">
                     <p class="user_name">{{ auth()->user()->name }}</p>
-                    <p>マイページ</p>
                     <p class="user_job">システムエンジニア</p>
                 </div>
             </div>

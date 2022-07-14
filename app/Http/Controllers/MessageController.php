@@ -11,6 +11,7 @@ class MessageController extends Controller
     public function index(Request $request, MessageRoom $messageRoom)
     {
         $messages = Message::latest()->where('message_room_id', $messageRoom->id)->get();
+        $messagePost = Message::where('message_room_id', $messageRoom->id)->first();
 
         function url($param){
             return  [
@@ -26,7 +27,7 @@ class MessageController extends Controller
                 ->route('posts.index');
         }
 
-        return view('message.index', ['messages' => $messages, 'messageRoom' => $messageRoom, 'url' => url('chats')]);
+        return view('message.index', ['messages' => $messages, 'messageRoom' => $messageRoom, 'url' => url('messages')]);
     }
 
     public function store(Request $request, MessageRoom $messageRoom)
