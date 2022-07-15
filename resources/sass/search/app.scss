@@ -1,0 +1,50 @@
+@import "../variables";
+@import "../header/variables";
+
+$search-input-size : 50px;
+
+.container {
+    margin: 0 auto;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search_container {
+    margin-top: 12vh;
+}
+
+.search_title {
+    font-weight: bold;
+    color: #666;
+    display: block;
+    margin-top: 48px;
+    font-size: 18px;
+}
+
+.search_form {
+    margin-top: 8px;
+    width: 100%;
+
+    position: relative;
+}
+
+.search_input {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #f5f5f5;
+    font-weight: bold;
+    height: $search-input-size;
+    padding: 16px;
+    border-radius: $search-input-size / 2;
+}
+
+.search_btn {
+    position: absolute;
+    right: 0;
+    color: $main-btn-font-color;
+    border: none;
+    background: $main-btn-color;
+    height: $search-input-size;
+    width: $search-input-size;
+    border-radius: $search-input-size / 2;
+}

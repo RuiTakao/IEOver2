@@ -22,7 +22,7 @@
             <h1 class="header-logo"><a class="header-link" href="/">Idea-Expo-Online</a></h1>
             <nav class="header_nav">
                 <ul class="header_nav_lists">
-                    <a class="header_nav_link" href="#"><li class="header_nav_list"><i class="fa-solid fa-magnifying-glass"></i></li></a>
+                    <a class="header_nav_link" href="{{ route('posts.search') }}"><li class="header_nav_list"><i class="fa-solid fa-magnifying-glass"></i></li></a>
                     <a class="header_nav_link" href="#"><li class="header_nav_list"><i class="fa-regular fa-bell"></i></li></a>
                     <div class="header_nav_link"><li class="header_nav_list profile_icon" style="background-image: url(img/nukumori-hiroba-logo.png);"></li></div>
                     <a href="{{ route('post.create') }}" class="header_nav_link"><li class="header_nav_post_btn">投稿する</li></a>

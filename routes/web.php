@@ -6,6 +6,7 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\MessageRoomController;
 use App\Http\Controllers\MessageController;
+use App\Http\Controllers\PostSearchController;
 
 /*
 |--------------------------------------------------------------------------
@@ -56,6 +57,10 @@ Route::group([
         Route::get('post/{messageRoom}/message', [MessageController::class, 'index'])->name('index');
         Route::post('post/{messageRoom}/createMessage', [MessageController::class, 'store'])->name('store');
 });
+
+/** search ページへのルート */
+Route::get('search' ,[PostSearchController::class, 'search'])
+    ->name('posts.search');
 
 /** auth 関係の route */
 Auth::routes();

@@ -4,7 +4,8 @@
     "/js/posts/app.js": "/js/posts/app.js",
     "/js/users/app.js": "/js/users/app.js",
     "/js/messages/app.js": "/js/messages/app.js",
-    "/css/messages/app.css": "/css/messages/app.css",
+    "/js/search/app.js": "/js/search/app.js",
+    "/css/search/app.css": "/css/search/app.css",
     "/css/users/app.css": "/css/users/app.css",
     "/css/posts/app.css": "/css/posts/app.css",
     "/css/auth/app.css": "/css/auth/app.css"

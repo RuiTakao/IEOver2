@@ -15,9 +15,14 @@ class PostController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $posts = Post::latest()->get();
+        $posts = Post::latest()
+            ->where('title', 'LIKE', '%'. $request->search . '%')
+            ->orWhere('sub_title', 'LIKE', '%'. $request->search . '%')
+            // ->orWhere('sub_title', 'LIKE', '%'. $request->tag . '%')
+            ->get();
+
         $url = [
             'js' => asset('js/posts/app.js'),
             'css' => asset('css/posts/app.css'),
