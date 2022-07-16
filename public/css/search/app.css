@@ -10309,6 +10309,10 @@ body {
   align-items: center;
 }
 
+.header-link {
+  color: #55b3f7;
+}
+
 .header_nav {
   position: relative;
   /** モーダル */
