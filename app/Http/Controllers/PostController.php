@@ -18,8 +18,8 @@ class PostController extends Controller
     public function index(Request $request)
     {
         $posts = Post::latest()
-            ->where('title', 'LIKE', '%'. $request->search . '%')
-            ->orWhere('sub_title', 'LIKE', '%'. $request->search . '%')
+            ->where('title', 'LIKE', '%' . $request->search . '%')
+            ->orWhere('sub_title', 'LIKE', '%' . $request->search . '%')
             // ->orWhere('sub_title', 'LIKE', '%'. $request->tag . '%')
             ->get();
 
