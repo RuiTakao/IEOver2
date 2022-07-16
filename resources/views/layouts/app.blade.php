@@ -13,6 +13,9 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
+    <link rel="stylesheet" href="{{ asset('css/fontawesome/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/reset/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/header/app.css') }}">
     <link href="{{ $url['css'] }}" rel="stylesheet">
 </head>
 <body>

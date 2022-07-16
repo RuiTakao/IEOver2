@@ -1,141 +1,9 @@
-@charset "UTF-8";
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-}
-
 body {
   background: #f2f8f8;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding-bottom: 80px;
 }
 
-.header {
-  background: #FCFDFD;
-  box-shadow: 0 3px 6px #eaeaea;
-  padding: 8px;
-}
-
-.header_container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header_nav {
-  position: relative;
-  /** モーダル */
-}
-.header_nav .is-active {
-  display: block;
-}
-
-.header_nav_lists {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header_nav_link {
-  display: block;
-}
-.header_nav_link:not(:first-child) {
-  margin-left: 12px;
-}
-
-.header_nav_list {
-  list-style: none;
-  background: #eaeaea;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.profile_icon {
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: relative;
-  cursor: pointer;
-}
-
-.header_nav_post_btn {
-  background: #55b3f7;
-  color: #f2f8f8;
-  font-weight: bold;
-  border-radius: 2px;
-  padding: 4px 8px;
-  margin-left: 8px;
-}
-
-/** header_auth_link_menu */
-.header_auth_link_menu {
-  width: 160px;
-  background: #eaeaea;
-  display: none;
-  /** position article_show_config */
-  position: absolute;
-  top: 40px;
-  right: 0;
-}
-
-.header_auth_link_menu_btn {
-  padding: 4px 8px;
-}
-.header_auth_link_menu_btn:not(:first-child) {
-  border-top: 1px solid #ddd;
-}
-
-.header_profile_link_btn {
-  display: block;
-  width: 100%;
-  color: #000;
-}
-
-.header_logout_btn {
-  width: 100%;
-  border: none;
-  background: transparent;
-  font-size: 16px;
-  letter-spacing: 0.1em;
-  text-align: left;
-  cursor: pointer;
-}
-
-/** モバイル */
-@media screen and (max-width: 420px) {
-  .header {
-    padding: 12px 10px;
-  }
-  .header-logo {
-    font-size: 18px;
-  }
-  .header_nav_link:not(:first-child) {
-    margin-left: 6px;
-  }
-  .header_nav_list {
-    width: 24px;
-    height: 24px;
-  }
-  .header_nav_post_btn {
-    padding: 2px 8px;
-    margin-left: 4px;
-    font-size: 14px;
-  }
-}
 .container {
   margin: 0 auto;
   max-width: 600px;
@@ -204,6 +72,8 @@ body {
   height: 135px;
   background: #eaeaea;
   margin-top: 8px;
+  background-size: cover;
+  background-repeat: no-repeat;
   /** grid layout */
   grid-row: 2/5;
   grid-column: 2;

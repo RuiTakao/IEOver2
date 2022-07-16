@@ -3,7 +3,7 @@
 @section('content')
 <section class="article_create_section">
     <div class="container article_create_container">
-        <form class="article_create_form" action="{{ route('post.store') }}" method="post">
+        <form class="article_create_form" action="{{ route('post.store') }}" method="post" enctype="multipart/form-data">
             @csrf
             <div class="article_create_form_content">
                 <div class="idea-title_content">
@@ -18,6 +18,7 @@
                     <label for="body">アイデアの詳細</label>
                     <textarea name="body" id="body" cols="30" rows="10" placeholder="アイデアの詳細を入力してください"></textarea>
                 </div>
+                <input type="file" name="post_image" id="">
             </div>
             <div class="article_create_btn">
                 <input type="submit" value="投稿する">

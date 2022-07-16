@@ -53,10 +53,20 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
+        if ($file = $request->post_image) {
+            $fileName = $file->getClientOriginalName();
+            $path = public_path('storage/img/posts/');
+            $file->move($path, $fileName);
+        } else {
+            $fileName = "";
+        }
+
+
         $post = new Post();
         $post->title = $request->title;
         $post->sub_title = $request->sub_title;
         $post->body = $request->body;
+        $post->post_image = $fileName;
         $post->user_id = $request->user()->id;
         $post->save();
 

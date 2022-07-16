@@ -19,28 +19,6 @@ eval("// require('./bootstrap');//# sourceURL=[module]\n//# sourceMappingURL=dat
 
 /***/ }),
 
-/***/ "./resources/sass/auth/app.scss":
-/*!**************************************!*\
-  !*** ./resources/sass/auth/app.scss ***!
-  \**************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9hdXRoL2FwcC5zY3NzLmpzIiwibWFwcGluZ3MiOiI7QUFBQSIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3Jlc291cmNlcy9zYXNzL2F1dGgvYXBwLnNjc3M/YWRkNyJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBleHRyYWN0ZWQgYnkgbWluaS1jc3MtZXh0cmFjdC1wbHVnaW5cbmV4cG9ydCB7fTsiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./resources/sass/auth/app.scss\n");
-
-/***/ }),
-
-/***/ "./resources/sass/posts/app.scss":
-/*!***************************************!*\
-  !*** ./resources/sass/posts/app.scss ***!
-  \***************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9wb3N0cy9hcHAuc2Nzcy5qcyIsIm1hcHBpbmdzIjoiO0FBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9wb3N0cy9hcHAuc2Nzcz85NDdkIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxuZXhwb3J0IHt9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/sass/posts/app.scss\n");
-
-/***/ }),
-
 /***/ "./resources/sass/users/app.scss":
 /*!***************************************!*\
   !*** ./resources/sass/users/app.scss ***!
@@ -48,7 +26,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy91c2Vycy9hcHAuc2Nzcy5qcyIsIm1hcHBpbmdzIjoiO0FBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy91c2Vycy9hcHAuc2Nzcz8zMDA1Il0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxuZXhwb3J0IHt9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/sass/users/app.scss\n");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy91c2Vycy9hcHAuc2Nzcy5qcyIsIm1hcHBpbmdzIjoiO0FBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy91c2Vycy9hcHAuc2Nzcz8zMzEzIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxuZXhwb3J0IHt9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/sass/users/app.scss\n");
+
+/***/ }),
+
+/***/ "./resources/sass/messages/app.scss":
+/*!******************************************!*\
+  !*** ./resources/sass/messages/app.scss ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9tZXNzYWdlcy9hcHAuc2Nzcy5qcyIsIm1hcHBpbmdzIjoiO0FBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9tZXNzYWdlcy9hcHAuc2Nzcz85OTI4Il0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxuZXhwb3J0IHt9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/sass/messages/app.scss\n");
 
 /***/ }),
 
@@ -59,7 +48,62 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9zZWFyY2gvYXBwLnNjc3MuanMiLCJtYXBwaW5ncyI6IjtBQUFBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vcmVzb3VyY2VzL3Nhc3Mvc2VhcmNoL2FwcC5zY3NzPzgyNzkiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5leHBvcnQge307Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/sass/search/app.scss\n");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9zZWFyY2gvYXBwLnNjc3MuanMiLCJtYXBwaW5ncyI6IjtBQUFBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vcmVzb3VyY2VzL3Nhc3Mvc2VhcmNoL2FwcC5zY3NzPzZlOWEiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5leHBvcnQge307Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/sass/search/app.scss\n");
+
+/***/ }),
+
+/***/ "./resources/sass/fontawesome/app.scss":
+/*!*********************************************!*\
+  !*** ./resources/sass/fontawesome/app.scss ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9mb250YXdlc29tZS9hcHAuc2Nzcy5qcyIsIm1hcHBpbmdzIjoiO0FBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9mb250YXdlc29tZS9hcHAuc2Nzcz9hMzU4Il0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxuZXhwb3J0IHt9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/sass/fontawesome/app.scss\n");
+
+/***/ }),
+
+/***/ "./resources/sass/reset/app.scss":
+/*!***************************************!*\
+  !*** ./resources/sass/reset/app.scss ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9yZXNldC9hcHAuc2Nzcy5qcyIsIm1hcHBpbmdzIjoiO0FBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9yZXNldC9hcHAuc2Nzcz9mNWY4Il0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxuZXhwb3J0IHt9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/sass/reset/app.scss\n");
+
+/***/ }),
+
+/***/ "./resources/sass/header/app.scss":
+/*!****************************************!*\
+  !*** ./resources/sass/header/app.scss ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9oZWFkZXIvYXBwLnNjc3MuanMiLCJtYXBwaW5ncyI6IjtBQUFBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vcmVzb3VyY2VzL3Nhc3MvaGVhZGVyL2FwcC5zY3NzP2RlYzUiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5leHBvcnQge307Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/sass/header/app.scss\n");
+
+/***/ }),
+
+/***/ "./resources/sass/auth/app.scss":
+/*!**************************************!*\
+  !*** ./resources/sass/auth/app.scss ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9hdXRoL2FwcC5zY3NzLmpzIiwibWFwcGluZ3MiOiI7QUFBQSIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3Jlc291cmNlcy9zYXNzL2F1dGgvYXBwLnNjc3M/ZTZjMCJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBleHRyYWN0ZWQgYnkgbWluaS1jc3MtZXh0cmFjdC1wbHVnaW5cbmV4cG9ydCB7fTsiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./resources/sass/auth/app.scss\n");
+
+/***/ }),
+
+/***/ "./resources/sass/posts/app.scss":
+/*!***************************************!*\
+  !*** ./resources/sass/posts/app.scss ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvc2Fzcy9wb3N0cy9hcHAuc2Nzcy5qcyIsIm1hcHBpbmdzIjoiO0FBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvc2Fzcy9wb3N0cy9hcHAuc2Nzcz9mNzY1Il0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxuZXhwb3J0IHt9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/sass/posts/app.scss\n");
 
 /***/ })
 
@@ -150,10 +194,14 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
 /******/ 			"/js/app": 0,
-/******/ 			"css/search/app": 0,
-/******/ 			"css/users/app": 0,
 /******/ 			"css/posts/app": 0,
-/******/ 			"css/auth/app": 0
+/******/ 			"css/auth/app": 0,
+/******/ 			"css/header/app": 0,
+/******/ 			"css/reset/app": 0,
+/******/ 			"css/fontawesome/app": 0,
+/******/ 			"css/search/app": 0,
+/******/ 			"css/messages/app": 0,
+/******/ 			"css/users/app": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -203,11 +251,15 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/search/app","css/users/app","css/posts/app","css/auth/app"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/search/app","css/users/app","css/posts/app","css/auth/app"], () => (__webpack_require__("./resources/sass/auth/app.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/search/app","css/users/app","css/posts/app","css/auth/app"], () => (__webpack_require__("./resources/sass/posts/app.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/search/app","css/users/app","css/posts/app","css/auth/app"], () => (__webpack_require__("./resources/sass/users/app.scss")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/search/app","css/users/app","css/posts/app","css/auth/app"], () => (__webpack_require__("./resources/sass/search/app.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/posts/app","css/auth/app","css/header/app","css/reset/app","css/fontawesome/app","css/search/app","css/messages/app","css/users/app"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/posts/app","css/auth/app","css/header/app","css/reset/app","css/fontawesome/app","css/search/app","css/messages/app","css/users/app"], () => (__webpack_require__("./resources/sass/fontawesome/app.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/posts/app","css/auth/app","css/header/app","css/reset/app","css/fontawesome/app","css/search/app","css/messages/app","css/users/app"], () => (__webpack_require__("./resources/sass/reset/app.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/posts/app","css/auth/app","css/header/app","css/reset/app","css/fontawesome/app","css/search/app","css/messages/app","css/users/app"], () => (__webpack_require__("./resources/sass/header/app.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/posts/app","css/auth/app","css/header/app","css/reset/app","css/fontawesome/app","css/search/app","css/messages/app","css/users/app"], () => (__webpack_require__("./resources/sass/auth/app.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/posts/app","css/auth/app","css/header/app","css/reset/app","css/fontawesome/app","css/search/app","css/messages/app","css/users/app"], () => (__webpack_require__("./resources/sass/posts/app.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/posts/app","css/auth/app","css/header/app","css/reset/app","css/fontawesome/app","css/search/app","css/messages/app","css/users/app"], () => (__webpack_require__("./resources/sass/users/app.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/posts/app","css/auth/app","css/header/app","css/reset/app","css/fontawesome/app","css/search/app","css/messages/app","css/users/app"], () => (__webpack_require__("./resources/sass/messages/app.scss")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/posts/app","css/auth/app","css/header/app","css/reset/app","css/fontawesome/app","css/search/app","css/messages/app","css/users/app"], () => (__webpack_require__("./resources/sass/search/app.scss")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

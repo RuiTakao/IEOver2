@@ -1,5 +1,4 @@
 @import "../variables";
-@import "../header/variables";
 
 .container {
     margin: 0 auto;
@@ -78,6 +77,8 @@
     margin-top: 8px;
     grid-row: 2 / 4;
     grid-column: 2;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .article_list_tag_name {

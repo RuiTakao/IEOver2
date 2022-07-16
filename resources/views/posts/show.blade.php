@@ -10,7 +10,7 @@
                 <span class="article_tag_icon">タグ：</span>
                 <a class="article_tag_name" href="#">ソフトウェア開発</a>
             </div>
-            <div class="article_image"></div>
+            <div class="article_image" style="background-image: url( {{ asset('storage/img/posts/' . $post->post_image) }} );"></div>
             <p class="article_sub_title">{{ $post->sub_title }}</p>
             <p class="article_body">{!! nl2br(e($post->body)) !!}</p>
             <div class="article_post_user">

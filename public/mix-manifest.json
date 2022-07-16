@@ -5,8 +5,12 @@
     "/js/users/app.js": "/js/users/app.js",
     "/js/messages/app.js": "/js/messages/app.js",
     "/js/search/app.js": "/js/search/app.js",
-    "/css/search/app.css": "/css/search/app.css",
-    "/css/users/app.css": "/css/users/app.css",
     "/css/posts/app.css": "/css/posts/app.css",
-    "/css/auth/app.css": "/css/auth/app.css"
+    "/css/auth/app.css": "/css/auth/app.css",
+    "/css/header/app.css": "/css/header/app.css",
+    "/css/reset/app.css": "/css/reset/app.css",
+    "/css/fontawesome/app.css": "/css/fontawesome/app.css",
+    "/css/search/app.css": "/css/search/app.css",
+    "/css/messages/app.css": "/css/messages/app.css",
+    "/css/users/app.css": "/css/users/app.css"
 }

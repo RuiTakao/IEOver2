@@ -1,5 +1,4 @@
 @import "../variables";
-@import "../header/variables";
 
 .container {
     margin: 0 auto;
@@ -71,6 +70,8 @@
     height: calc((180 / 4) * 3px);
     background: #eaeaea;
     margin-top: 8px;
+    background-size: cover;
+    background-repeat: no-repeat;
 
     /** grid layout */
     grid-row: 2 / 5;

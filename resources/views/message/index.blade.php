@@ -16,7 +16,7 @@
 <section class="article_section">
     <div class="container article_content">
         <h3 class="article_content_title">{{ $messageRoom->post->title }}</h3>
-        <div class="article_list_image"></div>
+        <div class="article_list_image" style="background-image: url( {{ asset('storage/img/posts/' . $messageRoom->post->post_image) }} );"></div>
         <div class="article_content_tag">
             <span class="article_content_tag_icon">タグ：</span>
             <a class="article_content_tag_name" href="#">ソフトウェア開発</a>
